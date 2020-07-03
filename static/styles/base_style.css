@@ -1,0 +1,23 @@
+/* USED FOR FINDING CONTENT CAUSING EXTENDED SIDE SCROLL */
+/* .slide-content .scroller { width: 1024px; }
+* { border: 1px solid #f00 !important; } */
+
+/* --------------------------- MENU NAVIGATION ----------------------------- */
+
+
+/* -------------------------- DEFAULT STYLES ------------------------------- */
+
+
+/* ------------------------------------------------------------------------- */
+/* -------------------------- MOBILE DEVICES ------------------------------- */
+/* ------------------------------------------------------------------------- */
+@media screen and (max-width: 1536px) {}
+
+/* Large devices (desktops, up to 1024px wide) */
+@media screen and (max-width: 1024px) {}
+
+/* Medium devices (tablets, up to 768px wide) */
+@media screen and (max-width: 768px) {}
+
+/* Small devices (phones, up to 480px wide) */
+@media screen and (max-width: 480px) {}

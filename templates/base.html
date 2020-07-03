@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    {% block meta_description %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/base_style.css') }}">
+    {% block css %}{% endblock %}
+  </head>
+
+  <body>
+    <!-- MENU NAVIGATION  -->
+
+    <!-- EXTENDED CONTENT -->
+    {% block content %}{% endblock %}
+
+    <!-- JS/JQUERY -->
+    <script type="text/javascript" src="{{ url_for('static', filename='script/base_script.js') }}"></script>
+    {% block javascript %}{% endblock %}
+  </body>
+</html>
