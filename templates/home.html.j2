@@ -1,0 +1,12 @@
+{% extends "base.html.j2" %}
+{% block meta_description %}<meta name="description" content="">{% endblock %}
+{% block title %}Home{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">{% endblock %}
+
+<!-- Jinja2 extended content -->
+{% block content %}
+<h1>Home</h1>
+{% endblock %}
+
+<!-- JavaScript/jQuery -->
+{% block javascript %}<script type="text/javascript" src="{{ url_for('static', filename='script/home.js') }}"></script>{% endblock %}

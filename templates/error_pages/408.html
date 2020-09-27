@@ -2,24 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/error_page_style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>400</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>408</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/error_page.css') }}">
   </head>
   <body>
-    <div id="home">
-      <a href="/" id="terrafirma_logo_ref" title="Home"><img id="navbar_terrafirma_logo" src="https://terrafirma-website-static.s3.eu-west-2.amazonaws.com/images/Base-Layout/TF_White_Logo.png" alt="Terrafirma"></a>
-      <div class="container-fluid h-100">
-        <div class="row flex-grow-1 h-100">
-          <div class="col-8">
-            <div class="landing_text">
-              <a href="javascript:history.back()"><i class="fa fa-chevron-left" id="back_button" style="font-size: 50px"></i></a><h1>400</h1>
-              <h3>Request Timeout</h3>
-              <h5>The server timed out waiting for the request.</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1>408</h1>
+    <p>Error: Request timeout.</p>
   </body>
 </html>

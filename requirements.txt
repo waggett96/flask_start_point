@@ -1,0 +1,5 @@
+Flask==1.1.2
+Flask-Autoversion==0.2.0
+Jinja2==2.11.2
+pandas==1.0.3
+pipenv==2018.11.26

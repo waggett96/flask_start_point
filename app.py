@@ -1,14 +1,30 @@
 from os import environ
-from flask import *
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'the random string'
+app.config['SECRET_KEY'] = 'lots and lots of random strings'
 
 # -----------------------------------------------------------------------------
 # HOME
 @app.route("/")
+@app.route("/home")
 def home():
-    return render_template("base.html")
+    return render_template("home.html.j2")
+
+# MUSIC
+@app.route("/music")
+def music():
+    return render_template("music.html.j2")
+
+# STORY
+@app.route("/story")
+def story():
+    return render_template("story.html.j2")
+
+# MERCH
+@app.route("/merch")
+def merch():
+    return render_template("merch.html.j2")
 
 # -----------------------------------------------------------------------------
 # ERROR HANDLING PAGES
@@ -24,6 +40,9 @@ def not_found(e):
 @app.errorhandler(500)
 def not_found(e):
     return render_template("error_pages/500.html")
+@app.errorhandler(502)
+def not_found(e):
+    return render_template("error_pages/502.html")
 
 # -----------------------------------------------------------------------------
 ################################## RUN APP ##################################

@@ -1,0 +1,4 @@
+////////////////// DOM LOADED //////////////////
+$suk(document).ready(function() {
+
+});
